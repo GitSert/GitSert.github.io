@@ -1,0 +1,186 @@
+    .title1 {
+        font-family: alata, helvetica;
+      }
+      body
+      {
+                  font-family: Alata, Arial, sans-serif;
+                  background-image: url("vagefoto.jpg");
+                  background-size: 100%;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  max-width: 100%;
+                  max-height: auto;
+                  margin: auto;
+                }
+                
+                .white-text {
+                color: white
+                }
+
+/*dropdown below*/
+                .navbar {
+                  overflow: hidden;
+                  background-color: black;
+                }
+                
+                .navbar a {
+                  float: left;
+                  font-size: 16px;
+                  color: black;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                }
+                
+                .dropdown {
+                  float: left;
+                  overflow: hidden;
+                }
+                
+                .dropdown .dropbtn {
+                  font-size: 16px;  
+                  border: none;
+                  outline: none;
+                  min-width: 100px;
+                  color: rgb(24, 24, 24);
+                  padding: 14px 16px;
+                  background-color: rgb(33, 33, 33);
+                  font-family: inherit;
+                  margin: 0;
+                }
+                
+                .navbar a:hover, .dropdown:hover .dropbtn {
+                  background-color: rgb(24, 24, 24);
+                }
+                
+                .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: rgb(33, 33, 33);
+                  min-width: 100px;
+                  min-height: auto;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 1  ;
+        }
+
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: rgb(24, 24, 24)
+;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;	
+        }
+/*dropdown end*/
+
+        .white-text {
+            color: white !important;
+}
+        .text-red {
+          color: rgb(255, 10, 10) !important;
+}
+        .margin-h1 {
+            margin: 30px 0px 30px 0px;
+}
+        .center1 /* center is also a block */ {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 18%;
+            background: black;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            opacity: 0,9;
+}
+        .center2 /* center is also a block */ {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 40%;
+            background: black;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+}
+        .texttype1 {
+            font-family: alata helvetica;
+}
+        p {
+            font-size: 125%;
+}
+        img { 
+            opacity: 100%;
+            border-radius: 10px;
+}
+
+/*table below*/
+        table {
+          width:100%;
+}
+        table, th, td {
+          border: 1px solid rgb(50, 50, 50);
+          border-collapse: collapse;
+}
+        th, td {
+          padding: 15px;
+          text-align: center;
+}
+        #table1 tr:nth-child(even) {
+          background-color: rgb(55, 55, 55);
+}
+        #table1 tr:nth-child(odd) {
+         background-color: rgb(33, 33, 33);
+}
+        #table1 th {
+          background-color: black;
+          color: white;
+}
+/*table end*/
+
+/*link properties below*/
+        a:link, a:visited {
+          background-color: rgb(33, 33, 33);
+          color: red;
+          padding: 15px 25px;
+          text-align: center;
+          text-decoration: none;
+          max-width: fit-content;
+          min-width: 100px;
+          display: inline-block;
+        }
+/*link properties end*/
+
+/*custom scrollbar below*/        
+        /* width */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: rgb(33, 33, 33); 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: rgb(58, 58, 58); 
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: rgb(210, 10, 10); 
+        }
+/*custom scrollbar end*/
+

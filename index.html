@@ -1,100 +1,57 @@
 <!DOCTYPE html>
     <html>
         <head>  
-            <title> HZ Portfolio </title>
-        </head>
-        <body>
+            <title>Home</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <meta charset="UTF-8">
             <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
-            <style>
-                body {
-                  font-family: Alata, Arial, sans-serif;
-                  background-color: black;
-                }
-                
-                .white-text {
-                color: white
-                }
-                
-                .navbar {
-                  overflow: hidden;
-                  background-color: #585858;
-                }
-                
-                .navbar a {
-                  float: left;
-                  font-size: 16px;
-                  color: white;
-                  text-align: center;
-                  padding: 14px 16px;
-                  text-decoration: none;
-                }
-                
-                .dropdown {
-                  float: left;
-                  overflow: hidden;
-                }
-                
-                .dropdown .dropbtn {
-                  font-size: 16px;  
-                  border: none;
-                  outline: none;
-                  color: white;
-                  padding: 14px 16px;
-                  background-color: inherit;
-                  font-family: inherit;
-                  margin: 0;
-                }
-                
-                .navbar a:hover, .dropdown:hover .dropbtn {
-                  background-color: red;
-                }
-                
-                .dropdown-content {
-                  display: none;
-                  position: absolute;
-                  background-color: #585858;
-                  min-width: 160px;
-                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                  z-index: 1;
-        }
-
-        .dropdown-content a {
-          float: none;
-          color: #585858;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-        }
-        
-        .dropdown-content a:hover {
-          background-color: rgb(113, 113, 113)
-;
-        }
-        
-        .dropdown:hover .dropdown-content {
-          display: block;	
-        }
-        .white-text {
-            color: white !important;
-                }
-        .margin-h1 {
-            margin: 10px 0px 0px 10px;
-        }
-        </style>
-
+        </head>
+        <body>      
             <div class="navbar">
-                <a href="index.html">Home</a>
-                <a href="school.html">School</a>
+                <a href="index.html"class="text-red">Home</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Me</button>
-                        <div class="dropdown-content white-text">
-                            <a href="profile.html">Profile</a>
-                            <a href="dashboard.html">Dashboard</a>
-                            <a href="faq.html">FAQ</a>
+                    <button class="dropbtn text-red">Me &nbsp;<img src="downarrow2.png" style="width: 20px; text-align: bottom; position: absolute;"></button>
+                        <div class="dropdown-content">
+                            <a href="profile.html" class="text-red">
+                                Profile
+                            </a>
+                            <br>
+                            <a href="dashboard.html" class="text-red">
+                                Dashboard
+                            </a>
                         </div>
                 </div>
-             </div>
-              <h1 class="white-text margin-h1"> My website </h1>
+                <a href="faq.html" class="text-red">
+                    FAQ
+                </a>
+            </div>
+            <div class="margin-h1 texttype1 text-red">
+                <h1 class="center1">
+                  My website
+                </h1>
+                <p class="center2" style="text-align: left;">
+                    Welcome to my website!<br><br>I think the HBO level suits me because I am focused on self-improvement and I am motivated to learn how to program. In the short time that I have been at school at HZ I have already learned how to use github and make this website using HTML and CSS.<br>
+                    More importantly I learned how to keep learning new stuff and how to keep improving. <br><br>
+                    I think the study programme at HZ suits my personality because I feel that there is a good balance between independency and explanation. I like that I have to go to school for myself and not for somebody else and that I also do not get detention or anything if I show up late.
+                </p> 
+                <p class="center2 margin-h1 texttype1 text-red">
+                    To show some of what I have learned so far I'll put some shameless self promotion down here.<br><br>
+                    <a href="https://www.youtube.com/channel/UCmSagU8SpR_vh2_39HbEezg?view_as=subscriber">
+                        <img src="yt.png" alt="My youtube channel" style="width: 48px;height:auto;">
+                    </a>
+                    &nbsp;
+                    <a href="https://www.instagram.com/melvin_s__/">
+                        <img src="insta.png" alt="My instagram profile" style="width:34px;height:auto;">
+                    </a>
+                    &nbsp;
+                    <a href="https://steamcommunity.com/id/TophatPigeonno">
+                        <img src="steam.png" alt="My steam profile" style="width:34px;height:auto;">
+                    </a>
+                    &nbsp;
+                    <a href="https://untappd.com/user/MelvinScheele">
+                        <img src="untappd.png" alt="My untappd profile" style="width:35px;height:auto;">
+                    </a>
+                </p>
+            </div>
         </body>
     </html>
