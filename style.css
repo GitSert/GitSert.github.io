@@ -6,15 +6,23 @@
                   font-family: Alata, Arial, sans-serif;
                   background-image: url("vagefoto.jpg");
                   background-size: 100%;
-                  background-repeat: no-repeat;
+                  background-repeat: no-repeat center center fixed;
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;;
                   background-attachment: fixed;
                   max-width: 100%;
                   max-height: auto;
                   margin: auto;
                 }
-                
                 .white-text {
                 color: white
+                }
+                img.a {
+                  width: 200px;
+                  height: 400px;
+                  object-fit: cover;
                 }
 
 /*dropdown below*/
@@ -114,6 +122,18 @@
             padding: 50px;
             text-align: center;
 }
+        .center3 /* center is also a block */ {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 40%;
+            height: 10%;
+            background: black;
+            border-radius: 20px;
+            padding: 3px;
+            text-align: center;
+}
         .texttype1 {
             font-family: alata helvetica;
 }
@@ -123,11 +143,18 @@
         img { 
             opacity: 100%;
             border-radius: 10px;
+            max-width: 100%;
+            max-height: auto;
 }
+        table { 
+          max-width: 100%;
+          max-height: auto;
+        }
 
 /*table below*/
         table {
           width:100%;
+          height: auto;
 }
         table, th, td {
           border: 1px solid rgb(50, 50, 50);
