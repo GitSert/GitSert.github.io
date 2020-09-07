@@ -23,6 +23,7 @@
                   width: 200px;
                   height: 400px;
                   object-fit: cover;
+                  transition: all .2s linear;
                 }
 
 /*dropdown below*/
@@ -36,10 +37,12 @@
                   font-size: 16px;
                   color: black;
                   text-align: center;
+                  display: block;
                   padding: 14px 16px;
                   text-decoration: none;
+                  transition: all .2s linear;
                 }
-                
+               
                 .dropdown {
                   float: left;
                   overflow: hidden;
@@ -78,6 +81,7 @@
           text-decoration: none;
           display: block;
           text-align: left;
+          transition: all .2s linear;
         }
         
         .dropdown-content a:hover {
@@ -146,15 +150,13 @@
             max-width: 100%;
             max-height: auto;
 }
-        table { 
-          max-width: 100%;
-          max-height: auto;
-        }
 
 /*table below*/
         table {
-          width:100%;
+          width: 100%;
           height: auto;
+          max-width: 100%;
+          max-height: auto;
 }
         table, th, td {
           border: 1px solid rgb(50, 50, 50);
@@ -187,6 +189,16 @@
           min-width: 100px;
           display: inline-block;
         }
+        a:link, a:hover {
+          background-color: rgb(50, 50, 50);
+          color: red;
+          padding: 15px 25px;
+          text-align: center;
+          text-decoration: none;
+          max-width: fit-content;
+          min-width: 100px;
+          display: inline-block;
+        }
 /*link properties end*/
 
 /*custom scrollbar below*/        
@@ -211,3 +223,71 @@
         }
 /*custom scrollbar end*/
 
+/*shadow below*/
+        #shadow {
+          box-shadow: 0 15px 25px rgba(15,15,15,0.3), 0 11px 11px rgba(15,15,15,0.4);
+        }
+/*end of shadow*/
+
+/*animation*/
+.tile--css_animations__demo2 div {
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5%;
+  left: 85%;
+  width: 80%;
+}
+.tile--css_animations__demo2 div:nth-of-type(odd) {
+  background: white;
+}
+.tile--css_animations__demo2 div:nth-of-type(even) {
+  background: red;
+  border: 2px solid black;
+}
+.tile--css_animations__demo2 div:nth-of-type(3) {
+  height: 10px;
+  width: 10px;
+  margin-top: -5px;
+  margin-left: -5px;
+  -webkit-animation: slide 3s ease-in-out infinite;
+  animation: slide 3s ease-in-out infinite;
+}
+.tile--css_animations__demo2 div:nth-of-type(2) {
+  height: 20px;
+  width: 20px;
+  margin-top: -12px;
+  margin-left: -12px;
+  -webkit-animation: slide 3s -2.7s ease-in-out infinite;
+  animation: slide 3s -2.7s ease-in-out infinite;
+}
+.tile--css_animations__demo2 div:nth-of-type(1) {
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+  -webkit-animation: slide 3s -2.4s ease-in-out infinite;
+  animation: slide 3s -2.4s ease-in-out infinite;
+}
+@keyframes slide {
+  0% {
+      left: 75%
+  }
+  50% {
+      left: 25%;
+  }
+  100% {
+      left: 75%;
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+      left: 75%
+  }
+  50% {
+      left: 25%;
+  }
+  100% {
+      left: 75%;
+  }
+}
+/*animation end*/
