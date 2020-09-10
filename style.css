@@ -291,3 +291,16 @@
   }
 }
 /*animation end*/
+
+/*progress bar below*/
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#progressbar {
+  width: 1%;
+  height: 30px;
+  background-color: red;
+}
+/*progress bar end*/
