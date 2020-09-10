@@ -305,5 +305,6 @@
   text-align: center;
   line-height: 30px;
   color: white;
+  outline: 1px solid black;
 }
 /*progress bar end*/
