@@ -334,7 +334,7 @@
 	height:26px;
 	line-height:26px;
 	text-align:center;
-	color:#000;
+	color:#999;
 	font-weight:bold;
 }
 .progbar span {
@@ -343,7 +343,7 @@
 	left:0;
 	top:0;
 	border:none;
-	background:blue url(images/progress-bar.jpg) repeat-x 0 0;
+	background:red url(images/progress-bar.jpg) repeat-x 0 0;
 	z-index:1;
 }
 .progbar b {
@@ -353,7 +353,7 @@
 	position:absolute;
 	top:-1px;
 	z-index:2px;
-	background:red;
+	background:white;
 }
 .ex1 span {width:10%}
 .ex1 b {left:20%}
