@@ -291,3 +291,15 @@
   }
 }
 /*animation end*/
+/*progress bar*/
+#progress {
+  width: 100%;
+  background-color: grey;
+}
+
+#bar {
+  width: 1%;
+  height: 30px;
+  background-color: red;
+}
+/*progress bar end*/
