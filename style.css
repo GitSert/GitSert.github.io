@@ -330,11 +330,11 @@
 .progbar, .progbar span {
 	position:relative;
 	width:200px;
-	border:1px solid #000;
+	border:1px solid #999;
 	height:26px;
 	line-height:26px;
 	text-align:center;
-	color:#999;
+	color:white;
 	font-weight:bold;
 }
 .progbar span {
@@ -356,4 +356,4 @@
 	background:white;
 }
 .bar span {width:10%}
-.bar b {left:75%}
+.bar b {left:150%}
