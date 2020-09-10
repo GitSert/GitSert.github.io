@@ -60,7 +60,9 @@
             </div>
             <div class="margin-h1 center2 texttype1 text-red"; text-align: center; id="shadow">
                 <h2>Study monitor</h2>
-<!--for some reason table wont use overflow-->
+                        <div id="progressbar">
+                          <div id="progressbar"></div>
+                        </div>
                 <table id="table1" style="width: 100%; overflow-x:auto !important;">
                     <tr>
                         <th><h3>
@@ -139,6 +141,26 @@
                     <div></div>
                 </div>
             </div>
+            <script>
+                    var i = 0;
+                        function move() {
+                          if (i == 0) {
+                            i = 1;
+                            var elem = document.getElementById("myProgress");
+                            var width = 1;
+                            var id = setInterval(frame, 10);
+                            function frame() {
+                              if (width >= 100) {
+                                clearInterval(id);
+                                i = 0;
+                              } else {
+                                width++;
+                                elem.style.width = width + "%";
+                              }
+                            }
+                          }
+                        }
+             </script>
         </body>
         <footer>
             <div class="white-text margin-h1 texttype1 center3 text-red" id="shadow">
