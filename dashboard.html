@@ -6,6 +6,9 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         </head>
         <body>
               <div class="navbar">
@@ -60,7 +63,11 @@
             </div>
             <div class="margin-h1 center2 texttype1 text-red"; text-align: center; id="shadow">
                 <h2>Study monitor</h2>
-<!--for some reason table wont use overflow-->
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-red progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                              0%
+                            </div>
+                        </div>
                 <table id="table1" style="width: 100%; overflow-x:auto !important;">
                     <tr>
                         <th><h3>
