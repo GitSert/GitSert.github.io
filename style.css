@@ -26,6 +26,58 @@
                   transition: all .2s linear;
                 }
 
+/*accordion below*/
+/* tab */
+.tab {
+  position: relative;
+  margin: 2px;
+  max-width: 800px;
+}
+
+/* label */
+.tab input {
+  display: none;
+}
+.tab label {
+  display: block;
+  background: rgb(24, 24, 24);
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+.tab label::after {
+  content: "\25b6";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  transition: all 0.4s;
+}
+.tab input[type=checkbox]:checked + label::after,
+.tab input[type=radio]:checked + label::after {
+  transform: rotate(90deg);
+}
+
+/* content */
+.tab-content {
+  overflow: hidden;
+  background: rgb(33, 33, 33);
+  /* CSS animation will not work with auto height */
+  /* This is why we use max-height */
+  transition: max-height 0.4s; 
+  max-height: 0;
+}
+.tab-content p {
+  margin: 20px;
+}
+.tab input:checked ~ .tab-content {
+  /* Set the max-height to a large number */
+  /* Or 100% viewport height */
+  max-height: 100vh;
+}
+
+/*accordion end*/                
 /*dropdown below*/
                 .navbar {
                   overflow: hidden;
@@ -99,6 +151,17 @@
 }
         .text-red {
           color: rgb(255, 10, 10) !important;
+          border: none;
+}
+        .line_break{
+          max-width:1000px;
+          max-height: 5px;
+          float: center;
+          color: red;
+          padding-top: 3px;
+          background-color: rgba(255,10, 10, .9);
+          border: none;
+          border-bottom: 3px solid rgb(255, 10, 10));
 }
         .margin-h1 {
             margin: 30px 0px 30px 0px;
