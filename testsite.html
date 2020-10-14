@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alata"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html" class="text-red">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn text-red">
+          Me &nbsp;<img
+            src="downarrow2.png"
+            style="width: 20px; text-align: bottom; position: absolute;"
+          />
+        </button>
+        <div class="dropdown-content">
+          <a href="profile.html" class="text-red">
+            Profile
+          </a>
+          <br />
+          <a href="dashboard.html" class="text-red">
+            Dashboard
+          </a>
+        </div>
+      </div>
+      <a href="faq.html" class="text-red">
+        FAQ
+      </a>
+    </div>
+    <h1 class="white-text margin-h1 texttype1 center1 text-red" id="shadow">
+      Test page
+    </h1>
+    <div
+      class="center2 margin-h1 texttype1"
+      style="text-align: left; max-width: inherit;"
+      id="shadow"
+    >
+      <p class="text-red">Sup</p>
+    </div>
+    <div class="margin-h1 texttype1 text-red">
+      <div class="tile--css_animations__demo2">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="white-text margin-h1 texttype1 center3 text-red" id="shadow">
+      <p font-weight: 400;>
+        Contact me:<br /><br /><a href="mailto:sche0177@hz.nl">Send email</a>
+      </p>
+    </div>
+  </footer>
+</html>
+<script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
