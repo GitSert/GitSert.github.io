@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Profile</title>
+    <title></title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="UTF-8" />
     <link
@@ -19,7 +19,7 @@
             style="width: 20px; text-align: bottom; position: absolute;"
           />
         </button>
-        <div class="dropdown-content white-text">
+        <div class="dropdown-content">
           <a href="profile.html" class="text-red">
             Profile
           </a>
@@ -27,11 +27,11 @@
           <a href="dashboard.html" class="text-red">
             Dashboard
           </a>
-          <br />
+          <br>
           <a href="motivation.html" class="text-red">
             Motivation
           </a>
-          <br />
+          <br>
           <a href="games.html" class="text-red">
             Games
           </a>
@@ -42,45 +42,27 @@
       </a>
     </div>
     <h1 class="white-text margin-h1 texttype1 center1 text-red" id="shadow">
-      My profile
+      Games
     </h1>
     <div
       class="center2 margin-h1 texttype1"
       style="text-align: left; max-width: inherit;"
       id="shadow"
     >
-      <img
-        src="site-ding.jpg"
-        alt="geslaagd-photo"
-        style="size: 100%; text-align: center;"
-      />
-      <ul class="text-red">
-        <li>
-          <p>What is my name?</p>
-          My name is Melvin Scheele
-        </li>
-        <br />
-        <li>
-          <p>Where am I from?</p>
-          I am from the Netherlands. I live in Westdorpe, Zeeuws Vlaanderen.
-        </li>
-        <br />
-        <li>
-          <p>How old am I?</p>
-          I am currently 19 years old.
-        </li>
-        <br />
-        <li>
-          <p>What are my hobbies?</p>
-          I enjoy gaming, video editing and drawing.
-        </li>
-        <br />
-        <li>
-          <p>Where do I work?</p>
-          I work at Albert Heijn as a warehouse employee and I really enjoy my
-          job and coworkers.
-        </li>
-      </ul>
+    <div class="texttype1" style="text-align: center; max-width: inherit;" id="shadow">
+      <h1 class="text-red">Rock, paper, scissors</h1>
+      <p class="text-red">
+        Fill in rock, paper or scissors and see if you win!
+      </p>
+      <form>
+        <input type="text" id="input" value="Type here" />
+        <input type="button" id="submit" value="Submit" />
+      </form>
+      <div class="text-red" id="countdownHere"></div>
+      <div class="text-red" id="resultHere"></div>
+      <script src="./app.js"></script>
+    </div>
+    <div class="margin-h1 texttype1 text-red">
       <div class="tile--css_animations__demo2">
         <div></div>
         <div></div>
@@ -96,3 +78,24 @@
     </div>
   </footer>
 </html>
+<script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
