@@ -19,21 +19,34 @@
             style="width: 20px; text-align: bottom; position: absolute;"
           />
         </button>
-        <div class="dropdown-content">
+        <div class="dropdown-content white-text">
           <a href="profile.html" class="text-red">
             Profile
           </a>
           <br />
-          <a href="dashboard.html" class="text-red">
-            Dashboard
-          </a>
-          <br>
           <a href="motivation.html" class="text-red">
             Motivation
           </a>
-          <br>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn text-red">
+          Other &nbsp;<img
+            src="downarrow2.png"
+            style="width: 20px; text-align: bottom; position: absolute;"
+          />
+        </button>
+        <div class="dropdown-content white-text">
+          <a href="dashboard.html" class="text-red">
+            Dashboard
+          </a>
+          <br />
           <a href="games.html" class="text-red">
             Games
+          </a>
+          <br />
+          <a href="companies.html" class="text-red">
+            Companies
           </a>
         </div>
       </div>
@@ -49,24 +62,25 @@
       style="text-align: left; max-width: inherit;"
       id="shadow"
     >
-    <div class="texttype1" style="text-align: center; max-width: inherit;" id="shadow">
-      <h1 class="text-red">Rock, paper, scissors</h1>
-      <p class="text-red">
-        Fill in rock, paper or scissors and see if you win!
-      </p>
-      <form>
-        <input type="text" id="input" value="Type here" />
-        <input type="button" id="submit" value="Submit" />
-      </form>
-      <div class="text-red" id="countdownHere"></div>
-      <div class="text-red" id="resultHere"></div>
-      <script src="./app.js"></script>
-    </div>
-    <div class="margin-h1 texttype1 text-red">
-      <div class="tile--css_animations__demo2">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="texttype1" style="text-align: center; max-width: inherit;">
+        <h1 class="text-red">Rock, paper, scissors</h1>
+        <p class="text-red">
+          Fill in rock, paper or scissors and see if you win!
+        </p>
+        <form autocomplete="off">
+          <input type="text" id="input" value="" placeholder="Type here" />
+          <input type="button" id="submit" value="Submit" />
+        </form>
+        <div class="text-red" id="countdownHere"></div>
+        <div class="text-red" id="resultHere"></div>
+        <script src="./app.js"></script>
+      </div>
+      <div class="margin-h1 texttype1 text-red">
+        <div class="tile--css_animations__demo2">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
   </body>

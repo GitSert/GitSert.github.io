@@ -46,8 +46,6 @@ function rps(input) {
     } else if (botChose === "paper") {
       return "Congratz! You picked scissors and the bot picked paper";
     }
-  } else {
-    console.log("Somehow something went wrong");
   }
 }
 
