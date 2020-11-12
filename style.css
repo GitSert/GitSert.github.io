@@ -302,14 +302,15 @@ a:hover {
 
 /*animation*/
 .tile--css_animations__demo2 div {
-  border-radius: 90%;
+  border-radius: 50%;
   position: absolute;
-  top: 2.5%;
+  margin-top: 2.5%;
   left: 85%;
   width: 80%;
 }
 .tile--css_animations__demo2 div:nth-of-type(odd) {
   background: white;
+  border: 2px solid black;
 }
 .tile--css_animations__demo2 div:nth-of-type(even) {
   background: red;
@@ -369,7 +370,7 @@ a:hover {
 }
 
 #bar {
-  width: 1%;
+  width: 22%;
   height: 30px;
   background-color: red;
   text-align: center;
@@ -431,7 +432,7 @@ a:hover {
   background: white;
 }
 .bar span {
-  width: 2%;
+  width: 33%;
 }
 .bar b {
   left: 75%;

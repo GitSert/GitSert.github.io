@@ -1,3 +1,12 @@
+// //Hide balls function below
+// //references
+// const ballDiv = document.getElementById("tile--css_animations__demo2");
+// const ballHideButton = document.getElementById("ballHideButton");
+// //event listener for hide balls button
+// ballHideButton.addEventListener("click", hideBalls());
+// //function that hides the balls
+//function hideBalls() {}
+//
 //
 //rock paper scissors below
 //
