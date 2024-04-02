@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alata"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html" class="text-red">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn text-red">
+          Me &nbsp;<img
+            src="downarrow2.png"
+            style="width: 20px; text-align: bottom; position: absolute;"
+          />
+        </button>
+        <div class="dropdown-content white-text">
+          <a href="profile.html" class="text-red">
+            Profile
+          </a>
+          <br />
+          <a href="motivation.html" class="text-red">
+            Motivation
+          </a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn text-red">
+          Other &nbsp;<img
+            src="downarrow2.png"
+            style="width: 20px; text-align: bottom; position: absolute;"
+          />
+        </button>
+        <div class="dropdown-content white-text">
+          <a href="dashboard.html" class="text-red">
+            Dashboard
+          </a>
+          <br />
+          <a href="games.html" class="text-red">
+            Games
+          </a>
+          <br />
+          <a href="companies.html" class="text-red">
+            Companies
+          </a>
+        </div>
+      </div>
+      <a href="faq.html" class="text-red">
+        FAQ
+      </a>
+      <button class="text-red" id="ballHideButton">Hide Balls</button>
+      <div id="ballDiv">
+        <div class="tile--css_animations__demo2">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="margin-h1 texttype1 text-red">
+      <h1 class="center1" id="shadow">
+        My website
+      </h1>
+      <p class="center2" style="text-align: left;" id="shadow">
+        Welcome to my website!<br /><br />I think the HBO level suits me because
+        I am focused on self-improvement and I am motivated to learn how to
+        program. In the short time that I have been at school at HZ I have
+        already learned how to use github and make this website using HTML, CSS
+        and a bit of JS.<br /><br /><br />
+        I think the study programme at HZ suits my personality because I feel
+        that there is a good balance between independency and explanation. I
+        like that I have to go to school for myself and not for somebody else
+        and that I also do not get detention or anything if I show up late.<br /><br /><br />
+        After finishing HBO ICT I would like to become a software engineer.
+      </p>
+      <p class="center2 margin-h1 texttype1 text-red" id="shadow">
+        To show some of what I have learned so far I'll put some shameless self
+        promotion down here.<br /><br />
+        <a
+          href="https://www.youtube.com/channel/UCmSagU8SpR_vh2_39HbEezg?view_as=subscriber"
+        >
+          <img
+            src="yt.png"
+            alt="My youtube channel"
+            style="width: 48px; height: auto;"
+          />
+        </a>
+        &nbsp;
+        <a href="https://www.instagram.com/melvin_s__/">
+          <img
+            src="insta.png"
+            alt="My instagram profile"
+            style="width: 34px; height: auto;"
+          />
+        </a>
+        &nbsp;
+        <a href="https://steamcommunity.com/id/TophatPigeonno">
+          <img
+            src="steam.png"
+            alt="My steam profile"
+            style="width: 34px; height: auto;"
+          />
+        </a>
+        &nbsp;
+        <a href="https://untappd.com/user/MelvinScheele">
+          <img
+            src="untappd.png"
+            alt="My untappd profile"
+            style="width: 35px; height: auto;"
+          />
+        </a>
+      </p>
+      <div></div>
+    </div>
+  </body>
+  <footer>
+    <div class="white-text margin-h1 texttype1 center3 text-red" id="shadow">
+      <p font-weight: 400;>
+        Contact me:<br /><br /><a href="mailto:sche0177@hz.nl">Send email</a>
+      </p>
+    </div>
+  </footer>
+</html>
+<script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
